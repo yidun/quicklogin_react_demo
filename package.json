@@ -10,9 +10,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@yidun/quickpass-plugin-rn": "^1.0.3",
     "react": "17.0.1",
-    "react-native": "0.64.0",
-    "react-native-quicklogin-plugin": "^1.0.1"
+    "react-native": "0.64.0"
   },
   "devDependencies": {
     "@babel/core": "^7.13.15",

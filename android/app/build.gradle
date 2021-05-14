@@ -185,7 +185,7 @@ android {
 
     repositories {
         flatDir {
-            dirs project(':react-native-quicklogin-plugin').file('libs')
+            dirs project(':yidun_quickpass-plugin-rn').file('libs')
         }
     }
 }
