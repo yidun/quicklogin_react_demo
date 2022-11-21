@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@yidun/quickpass-plugin-rn": "^1.0.6",
+    "@yidun/quickpass-plugin-rn": "^1.2.0",
     "react": "17.0.1",
     "react-native": "0.64.0"
   },
