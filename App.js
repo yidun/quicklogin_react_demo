@@ -69,15 +69,17 @@ export default class App extends Component {
 		   uiJsonConfig=iosConfigJson;
 		}
 		console.log(uiJsonConfig)
-		NativeModules.QuickLoginPlugin.setUiConfig(uiJsonConfig,(success)=>{});		
-		NativeModules.QuickLoginPlugin.login((success, resultDic)=>{
-		    console.log(resultDic)
-		    if (success) {
-		        NativeModules.QuickLoginPlugin.closeAuthController();
-		    } else {
+		NativeModules.QuickLoginPlugin.setUiConfig(uiJsonConfig,(success)=>{
+			NativeModules.QuickLoginPlugin.login((success, resultDic)=>{
+			    console.log(resultDic)
+			    if (success) {
+			        NativeModules.QuickLoginPlugin.closeAuthController();
+			    } else {
+			
+			    }
+			});
+		});		
 		
-		    }
-		});
 	}
 }
 

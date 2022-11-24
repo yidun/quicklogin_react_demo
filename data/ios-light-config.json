@@ -1,5 +1,4 @@
 {
-  "presentDirectionType": "1",
   "backgroundColor": "#FFFFFF",
   "navBarHidden": false,
   "navBgColor": "#3478F7",
@@ -47,11 +46,11 @@
   "logBtnOffsetTopY": 230,
   "logBtnEnableImg": "logo",
   "logBtnHighlightedImg": "pic_success",
-  "checkedImageName": "checkedImageName.png",
-  "unCheckedImageName": "unCheckedImageName.png",
+  "checkedImageName": "checkedImage",
+  "unCheckedImageName": "check_image",
   "checkboxWH": 50,
   "privacyState": true,
-  "checkedHidden": true,
+  "checkedHidden": false,
   "checkBoxAlignment": 0,
   "checkBoxMargin": 0,
   "appPrivacyOriginLeft": 40,
@@ -90,14 +89,13 @@
   "isOpenSwipeGesture": true,
 
   "isRepeatPlay": "YES",
-  "localVideoFileName": "video_portrait.mp4",
+  "videoURL": "",
   "animationDuration": 2,
   "animationRepeatCount": 1000,
 
-  "bgImage":"launchImage.png",
-  "launchImage":"kj_pic_bg",
-  "faceOrientation" : 1,
-  "loginDidDisapperfaceOrientation" : 1,
+  "bgImage":"",
+  "launchImage":"",
+  "faceOrientation" : 0,
   "modalTransitionStyle": 1,
   
   "statusBarStyle": 0,
@@ -112,7 +110,6 @@
             "cornerRadius": 20,
             "viewId": "handleCustomEvent1",
             "frame": {"mainScreenLeftDistance":100,"mainScreenTopDistance":360,"width":32,"height":32},
-            "backgroundImage":"yidun_logo.png"
         },
         {
             "type": "UIButton",
@@ -124,7 +121,6 @@
             "cornerRadius": 20,
             "viewId": "handleCustomEvent2",
             "frame": {"mainScreenCenterXWithLeftDistance":0,"mainScreenTopDistance":360,"width":32,"height":32},
-            "backgroundImage": "yidun_logo.png"
         },
         {
             "type": "UIButton",
@@ -136,7 +132,6 @@
             "cornerRadius": 20,
             "viewId": "handleCustomEvent3",
             "frame": {"mainScreenRightDistance":100,"mainScreenTopDistance":360,"width":32,"height":32},
-            "backgroundImage": "yidun_logo.png"
         },
         {
             "type": "UILabel",
@@ -145,6 +140,7 @@
             "viewId": "handleCustomLabel",
             "text": "其他登录方式",
             "textAlignment": 1,
+            "backgroundColor": "#FFFFFF",
             "frame": {"mainScreenCenterXWithLeftDistance":0,"mainScreenTopDistance":310,"width":200,"height":32}
         }
     ]
