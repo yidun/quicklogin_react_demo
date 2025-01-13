@@ -135,7 +135,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.quicklogin_react_demo"
+        applicationId "nis.netease.com.quickpassdemo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -151,7 +151,10 @@ android {
     }
     signingConfigs {
         debug {
-            //与业务id对应的签名
+            keyAlias 'yidun'
+            keyPassword 'yidun__'
+            storeFile file('../signkey/yidun.jks')
+            storePassword 'yidun__'
         }
     }
     buildTypes {
@@ -180,12 +183,6 @@ android {
                         defaultConfig.versionCode * 1000 + versionCodes.get(abi)
             }
 
-        }
-    }
-
-    repositories {
-        flatDir {
-            dirs project(':yidun_quickpass-plugin-rn').file('libs')
         }
     }
 }

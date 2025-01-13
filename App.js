@@ -40,7 +40,7 @@ export default class App extends Component {
   }
 
     componentDidMount () {
-		NativeModules.QuickLoginPlugin.initQuickLogin('易盾业务id')
+		NativeModules.QuickLoginPlugin.initQuickLogin('b55f3c7d4729455c9c3fb23872065401')
         this.subScription = NTESRNRouterEmitter.addListener('uiCallback',(value)=>{
              console.log(value)
          });
